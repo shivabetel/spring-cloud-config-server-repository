@@ -1,0 +1,6 @@
+mysql:
+  host: localhost
+  port: 30709
+  schema: ordermanagement
+  username: root
+  password: shiva
