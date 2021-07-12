@@ -9,7 +9,7 @@ kafka-config:
   replicationFactor: 3
 kafka-producer-config:
   key-serializer-class: org.apache.kafka.common.serialization.LongSerializer
-  value-serializer-class: com.oracle.microservices.common.streaming.model.IMessagePayload
+  value-serializer-class: com.oracle.microservices.common.streaming.interfaces.IMessagePayload
   compression-type: snappy
   acks: all
   batch-size: 16384
