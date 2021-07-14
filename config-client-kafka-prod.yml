@@ -2,9 +2,9 @@ kafka-config:
   bootstrapServers:
 #  schemaRegistryUrlKey: schema.registry.url
 #  schemaRegistryUrl: http://localhost:8081
-  topicName: orders
+  topicName: OrdermanagementStream
   topicNamesToCreate:
-    - orders
+    - OrdermanagementStream
   numOfPartitions: 3
   replicationFactor: 3
 kafka-producer-config:
