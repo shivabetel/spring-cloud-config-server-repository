@@ -1,5 +1,5 @@
 kafka-config:
-  bootstrapServers: cell-1.streaming.us-ashburn-1.oci.oraclecloud.com:9092
+  bootstrapServers:
 #  schemaRegistryUrlKey: schema.registry.url
 #  schemaRegistryUrl: http://localhost:8081
   topicName: orders
