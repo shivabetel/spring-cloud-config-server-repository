@@ -1,10 +1,10 @@
 kafka-config:
-  bootstrapServers:
+  bootstrapServers: ${kafka-bootstarpServers}
 #  schemaRegistryUrlKey: schema.registry.url
 #  schemaRegistryUrl: http://localhost:8081
-  topicName: OrdermanagementStream
-  topicNamesToCreate:
-    - OrdermanagementStream
+  topicName: ${topic-name}
+#  topicNamesToCreate:
+#    - OrdermanagementStream
   numOfPartitions: 3
   replicationFactor: 3
 kafka-producer-config:
@@ -17,5 +17,10 @@ kafka-producer-config:
   linger-ms: 5
   request-timeout-ms: 60000
   retry-count: 5
-  saslMechanism: ${SASL_MECHANISM)
-  securityProtocol: ${SECURITY_PROTOCOL}
+  sasl-mechanism: ${SASL_MECHANISM)
+  security-protocol: ${SECURITY_PROTOCOL}
+  oci-kafka-stream-details:
+    tenancy-name: ${kafka-tenancyName}
+    user-name: ${kafka-userName}
+    stream-pool-id: ${kafka-streamPoolId}
+    auth-token: ${kafka-authToken}
