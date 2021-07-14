@@ -17,7 +17,7 @@ kafka-producer-config:
   linger-ms: 5
   request-timeout-ms: 60000
   retry-count: 5
-  sasl-mechanism: ${SASL_MECHANISM:PLAIN)
+  sasl-mechanism: ${SASL_MECHANISM}
   security-protocol: ${SECURITY_PROTOCOL}
   oci-kafka-stream-details:
     tenancy-name: ${kafka-tenancyName}
