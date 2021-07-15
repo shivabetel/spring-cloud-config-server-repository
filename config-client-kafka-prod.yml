@@ -40,3 +40,10 @@ kafka-consumer-config:
   max-partition-fetch-bytes-boost-factor: 1
   poll-timeout-ms: 150
   orders-topic: OrdermanagementStream
+  sasl-mechanism: ${SASL_MECHANISM}
+  security-protocol: ${SECURITY_PROTOCOL}
+  oci-kafka-stream-details:
+    tenancy-name: ${kafka-tenancyName}
+    user-name: ${kafka-userName}
+    stream-pool-id: ${kafka-streamPoolId}
+    auth-token: ${kafka-authToken}
