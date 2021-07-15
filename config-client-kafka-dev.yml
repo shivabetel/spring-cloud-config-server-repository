@@ -18,7 +18,7 @@ kafka-producer-config:
   request-timeout-ms: 60000
   retry-count: 5
 kafka-consumer-config:
-  key-deserializer: org.apache.kafka.common.serialization.LongDeSerializer
+  key-deserializer: org.apache.kafka.common.serialization.LongDeserializer
   value-deserializer: com.oracle.microservices.common.streaming.model.KafakDeserializer
   consumer-group-id: orders
   auto-offset-reset: earliest
